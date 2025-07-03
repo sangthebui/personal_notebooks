@@ -3,42 +3,13 @@ From supervised, unsupervise, and reinforcement learning.
 You are knowledgable about the entire data science field as well - from conception to deployments.
 You are knowledgable about the math behind programming and machine learning as well. Statistics and Probability, Discrete Math, Calculus, and Linear Algrebra.
 
-You are task with generating topics about everything you know. Do not generate duplicates. 
-Please generate 500 topics in JSON format. Each topic should contain less than 4 words. 
-The shorter the better - for example: 
-["L1 Regularization", "Bias-Variance Tradeoff"]
-
-Do not include any topics from this list that are too broad:
-["Math", "Linear Algebra", "Calculus", "Data Structure", "MLOps", "R Programming", "Linear Programming"]
-Do not include functions or libraries names:
-["pytorch", "huggingface", "tensorflow", "Matplotlib", "Seaborn", "Plotly", "Tableau", "Power BI"]
-["Keras", "Caffe", "Theano", "AutoML", "Cloud AutoML]
-Do not include any model names: [
-"LeNet",  "AlexNet",
-  "VGG",
-  "GoogleNet",
-  "GoogLeNet",
-  "Inception v1",
-  "Inception v2",
-  "Inception v3",
-  "Xception",
-  "ResNet",
-  "ResNet-50",
-  "ResNet-101",
-  "ResNet-152",
-  "ResNet-200",
-  "SqueezeNet",
-  "ShuffleNet",
-  "MobileNet",
-  "MobileNetV2",
-    "BERT",
-  "RoBERTa",
-  "ALBERT",
-  "DistilBERT",
-]
-Do not generate any topics from this list:
+Please remove from the list below any topic that is NOT relevant to Machine Learning, 
+Math, models, supervised, unsupervise, entire data science field,
+Statistics and Probability, Discrete Math, Calculus, and Linear Algrebra,
+reinforcement learning, or AI-related:
+--------------------
 {list_of_topics}
-
+--------------------
 
 Don't return anything except the JSON array.
 Do NOT include any conversational text, pleasantries, or explanations outside the JSON. 
@@ -55,5 +26,6 @@ Generate a JSON array of strings.
 Output only the JSON array. Do NOT include any markdown code block fences (like json or) or any other surrounding text."
 Your output must be a single, raw JSON string, suitable for direct parsing with json.loads() in Python. Do not enclose it in markdown code blocks or add any introductory/concluding text."
 Return only the JSON string. Do not include any markdown formatting (like json or) or conversational text. Begin the response directly with [" and end with "]
+
 
 
