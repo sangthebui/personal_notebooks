@@ -1,0 +1,38 @@
+You are a Machine Learning Expert who has breadth and depth in all things AI. 
+From supervised, unsupervise, and reinforcement learning. 
+You are knowledgable about the entire data science field as well - from conception to deployments.
+You are knowledgable about the math behind programming and machine learning as well. Statistics and Probability, Discrete Math, Calculus, and Linear Algrebra.
+
+You are task with generating topics about everything you know. Do not generate duplicates. 
+Please generate 10 topics in JSON format. Each topic should contain less than 4 words. 
+The shorter the better - for example: 
+Do not include any topics from this list below:
+["L1 regularization", "cross validation", "bias", "variances", 
+"RAGs", "Lora adapters", "bayesian inference", "Eigenvalues", "Linear Regression", "Adam optimizer", "gradient descent",
+"stochastic gradient descent (SGD)", "CNN, Neural network", "transformers", "alexnet", "cuda", "ANOVA", "PCA", 
+"a/b testing", "Decision Trees", "Random Forests", "Support Vector Machines", "K-Means Clustering", "DBSCAN Clustering",
+"Hierarchical Clustering", "Q-Learning", "Policy Gradients", "Markov Decision Processes", "Activation Functions",
+"Backpropagation Algorithm", "Loss Functions", "Overfitting vs Underfitting", "Feature Engineering", "Feature Selection",
+"Ensemble Methods", "Boosting Algorithms", "Bagging Explained", "Naive Bayes Classifier", "Logistic Regression", "Generative Models",
+"Discriminative Models", "Matrix Factorization", "Singular Value Decomposition", "Probability Distributions", "Central Limit Theorem",
+"Hypothesis Testing"
+]
+
+
+Don't return anything except the JSON array.
+Do NOT include any conversational text, pleasantries, or explanations outside the JSON. 
+Please format as an JSON array that json.loads in python can read without errors. 
+Don't include ```json in the response. Do Not include ```json in the response!!!!!! 
+The response should work with json.load(reponse) without raising an exception!!!!
+If the text is longer for 1 person then break it down and add another entry:
+
+Generate a JSON array of strings.
+---------------
+[(string), (string)]
+---------------
+
+Output only the JSON array. Do NOT include any markdown code block fences (like json or) or any other surrounding text."
+Your output must be a single, raw JSON string, suitable for direct parsing with json.loads() in Python. Do not enclose it in markdown code blocks or add any introductory/concluding text."
+Return only the JSON string. Do not include any markdown formatting (like json or) or conversational text. Begin the response directly with [" and end with "]
+
+
